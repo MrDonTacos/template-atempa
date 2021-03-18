@@ -1,0 +1,106 @@
+
+body {
+ background-color: whitesmoke;
+ padding: 0 2% 0 2%;
+ background: url("images/moroccan-flower.png");
+ background-repeat: repeat;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box-1 {
+    height: 18vh;
+    width: 98%;
+    margin: 1% 0% 1% 0%;
+    box-shadow: -10px 5px black;
+    border: 2px solid black;
+}
+
+.box-1 > * {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box-1 > h2 {
+    font-size: 4em;
+}
+
+.box-1 > p {
+    font-size: 2em;
+}
+
+
+header {
+    background: url("images/herringbone.png");
+    background-repeat: repeat;
+}
+
+.container-middle {
+    display: flex;
+    height: 56vh;
+    justify-content:space-between;
+}
+
+section {
+    width: 98%;
+}
+
+.middle {
+    background-color: rgba(167, 149, 149, 0.350);
+    overflow-y: scroll;
+    box-shadow: -10px 5px black;
+}
+
+
+.middle:hover{
+    margin-top: -10px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+}
+
+.middle:nth-of-type(2):hover{
+    margin-top: -10px;
+    margin-bottom: 10px;
+    margin-left: 3%;
+}
+
+section > div > div:not(section div:nth-of-type(2)) {
+    flex: 1;
+}
+
+section > div > div:nth-of-type(2) {
+    flex: 2;
+    margin: 0% 2% 0 2%;
+}
+
+div > h3 {
+    padding-top: 1em;
+    margin-left: 2em;
+    padding-right: 16px;
+}
+
+div > p {
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-size: x-large;
+}
+
+div > p:first-child {
+    padding: 2em ;
+    padding-bottom: 0;
+}
+
+div > p:not(p:first-child) {
+    padding: 1em;
+}
+
+footer {
+    background: url("images/crossline-dots.png");
+    background-repeat: repeat;
+    font-size: .9em;
+    display: flex;
+    align-items: center;
+}
