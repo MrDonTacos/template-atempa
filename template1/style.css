@@ -7,6 +7,7 @@ body {
    }
    
 *  {
+       box-sizing: border-box;
        margin: 0;
        padding: 0;
     }
@@ -24,21 +25,40 @@ body {
    }
 
    header > div > ul {
+       height: 50%;
+       width: 100%;
        list-style: none;
        display: flex;
-       flex-wrap: nowrap;
+       flex-wrap: wrap;
        justify-content: space-evenly;
        align-items:baseline;
        font-size:2vmax;
    }
 
    header>div:first-child{ 
-       font-size: 2em;
+       font-family:"Arial, Helvetica, sans-serif", cursive;
    }
 
-   header > div {
-       height: 50%;
-       width: 100%;
+   .left-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-size: 2vmax;
+    color: white;
+   }
+
+   li {
+       list-style: none;
+   }
+
+   .section-item {
+       flex-basis: 20%;
+   }
+
+   .section-item:first-child {
+       margin-top: 2em;
    }
 
    .list-item {
@@ -71,26 +91,73 @@ body {
    .middle {
        background-color: rgba(245, 245, 245, 0.397) ;
        overflow-y: auto;
+       
    }
    
    section > div > div:not(section div:nth-of-type(2)) {
        flex: 1;
+       background-color: rgba(47, 79, 79, 0.541);
    }
    
    section > div > div:nth-of-type(2) {
        flex: 3;
        margin: 0 0 0 2%;
    }
+
+   .product {
+    margin: 2%;
+    display: inline-block;
+    height: 14em;
+    width: 40%;
+    background-color: darkturquoise;
+   }
    
    div > h3 {
-       padding-top: 0.5em;
+       font-size: 4em;
    }
    
    footer  {
        background: url("images/bush.png");
        background-repeat: repeat;
        display: flex;
-       flex-direction: column;
+       flex-direction: row;
        align-items: center;
+       text-align: center;
+       justify-content:space-around;
        overflow-x:auto;
+       font-size: 1em;
    }
+
+   footer > p {
+       flex-basis: 20%;
+   }
+
+   .product > p {
+       padding-top: 15%;
+       text-align: center;
+       font-size: 3em;
+   }
+
+   .spring {
+    background: url("images/spring.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+   .summer {
+    background: url("images/summer.jpg") ;
+    background-position: center;
+    background-size: cover;
+}
+
+   .fall {
+    background: url("images/fall.jpg") ;
+    background-position: center;
+    background-size: cover;
+}
+
+   .winter {
+       background: url("images/winter.jpg");
+       background-size: 100%;
+       background-position-y: 70%;
+    }
