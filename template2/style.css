@@ -19,11 +19,22 @@ body {
     border: 2px solid black;
 }
 
-.box-1 > * {
+.box-1:first-child > * {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
 
+header > div {
+    height: 40%;
+    object-fit: cover;
+}
+
+@supports(object-fit: cover){
+    header > div > img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
 .box-1 > h2 {
     font-size: 4em;
 }
@@ -31,7 +42,6 @@ body {
 .box-1 > p {
     font-size: 2em;
 }
-
 
 header {
     background: url("images/herringbone.png");
@@ -97,10 +107,22 @@ div > p:not(p:first-child) {
     padding: 1em;
 }
 
-footer {
+footer  {
     background: url("images/crossline-dots.png");
     background-repeat: repeat;
-    font-size: .9em;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    overflow-x: scroll;
+}
+
+footer > p:first-child {
+    padding: 1em 12em 1em 12em;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+footer > p:last-child {
+    color: blue;
+    font-size: 1.3em;
 }
