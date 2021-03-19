@@ -1,43 +1,108 @@
-* {
+html {
+    font-size: 62.5%; /** Reset a Rems **/
+    
+    box-sizing: border-box;
+  }
+  *,*:before, *:after{
+    box-sizing: inherit;
+  }
+    
+  h1, h2, h3, h4 {
+    font-family: 'PT Sans', sans-serif;
+  }
+.no-margin {
     margin: 0;
-    padding: 0;
 }
-
-body 
-{
- margin: 1em
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+/** Header **/ 
 
-body > *  {
-    margin: 1em 0;
-}
-
-.strip {
-    width: 98vw;
+.bar {
     height: 10vh;
     background-color: grey;
 }
-
-main {
-    height: 50vh;
-    width: 98vw;
-    background-color: blue;
-}
-
-section {
+.bar > .container {
     display: flex;
-    flex-direction: row;
-    flex-basis: 33%;
-    width: 98vw;
+    justify-content: space-around;
+    padding: 3rem;
+    align-items: center;
+    font-size: 2em;
+}
+.logo h4 {
+    color: white;
+    border: 6px solid green;
+    background-color: green;
+    border-radius:  0 20% 0 20%;
+}
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+main {
+    height: 56vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+main video {
+    width: 100vw;
+    opacity: 0.4;
+}
+h1 {
+    top: 20rem;
+}
+p {
+    top: 30rem;
+}
+h1,p {
+    color: white;
+    position: absolute;
+    z-index:2;
+    font-size: 6em;
+}
+section {
+    margin: 2rem 0 2rem 0;
+    display: flex;
     height: 20vh;
     justify-content: space-between;
 }
 
-section > *{
-    flex: 1;
-    background-color: hotpink;
+/** Tres cajas **/
+.three-box {
+    flex-basis: calc(33% - 1rem);
+    background-color: green;
+    overflow: hidden;
+    color: white;
 }
+.three-box img:hover {
+    -webkit-animation: 2s cambia_posicion;
+    position: relative;
+    top: -6rem;
+    height: 100%;
+    width: 100%;
+}
+@-webkit-keyframes cambia_posicion{
 
-.three-box:nth-child(2) {
-    margin: 0 2em 0 2em;
+    0%{
+        top: 0rem;
+    }
+    25% {
+        top: -1.5rem;
+    }
+    50%{
+        top:-3rem;
+    }
+    75%{
+        top: -5rem;
+    }
+    90% {
+        top: -6.3rem;
+    }
+}
+.three-box h3 {
+    text-align: center;
+    font-size: 2em;
 }
