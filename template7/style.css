@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+ margin: 1em
+}
+
+body > *  {
+    margin: 1em 0;
+}
+
+.strip {
+    width: 98vw;
+    height: 15vh;
+    background-color: grey;
+}
+
+main {
+    height: 50vh;
+    width: 98vw;
+    background-color: blue;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 33%;
+    width: 98vw;
+    height: 10vh;
+    justify-content: space-between;
+}
+
+section > *{
+    flex: 1;
+    background-color: hotpink;
+}
+
+.three-box:nth-child(2) {
+    margin: 0 2em 0 2em;
+}
