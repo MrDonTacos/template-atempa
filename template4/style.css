@@ -27,6 +27,10 @@ section > section {
     flex: 1;
 }
 
+section > section:nth-of-type(2){
+    flex: 3;
+}
+
 section > section:nth-child(2) {
     background-color: greenyellow;
 }
