@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 2em 2em 2em 2em;
+}
+
+header {
+    width: 97vw;
+    height: 20vh;
+    background-color: lawngreen;
+    margin-bottom: 2em;
+}
+
+main {
+    width: 97vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main section {
+    flex: 1;
+    background: lightsalmon;
+}
+
+main section:nth-child(2) {
+    background-color: white;
+    margin: 0 2em 0 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+main section div {
+    flex: 1em;
+    margin: 1em 0;
+    background-color: black;
+}
+
+.borderless {
+    margin: 0;
+}
