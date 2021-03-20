@@ -11,8 +11,33 @@ body{
     height: 10vh;
     width: 94vw;
     background-color: hotpink;
+    background-image: url(/template5/imagenes/banner.jpg);
+    background-position: center;
 }
 
+footer.strap {
+    height: 10vh;
+    width: 94vw;
+    background-color: hotpink;
+    background-image: url(/template5/imagenes/banner.jpg);
+    position: relative;
+    background-position:bottom;
+}
+
+
+
+.last-container .last-item:first-child{
+    background-image: url(/template5/imagenes/camera2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.first-container .first-row:first-child{
+    background-image: url(/template5/imagenes/camera.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 nav {
     margin-bottom: 2%;
 }
@@ -26,8 +51,9 @@ header {
    width: 94vw;
    background: grey;
    margin-bottom: 1em;
+   background-image: url(/template5/imagenes/cinema.jpg);
+   background-position: center;
 }
-
 section {
     display: flex;
     flex-direction: row;
@@ -36,7 +62,6 @@ section {
     height: 50vh;
     width: 94vw;
 }
-
 section > section {
     flex: 1;
 }
@@ -51,6 +76,12 @@ section > section:not(section:nth-of-type(2)){
 
 section > section:nth-child(2) {
     background-color: greenyellow;
+    background-image: url(/template5/imagenes/chicago_cinema.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.904);
+    opacity: 0.4;
 }
 
 section > section:nth-child(2) {
@@ -88,9 +119,26 @@ section > section:last-child > div{
 .first-row:nth-of-type(2) {
 
     margin: 1em 0 1em 0;
+    background-image: url(/template5/imagenes/palomitas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.last-item:nth-of-type(2) {
 
+.last-item:nth-of-type(2) {
     margin: 1em 0 1em 0;
+    background-image: url(/template5/imagenes/palomitas2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+h1 {
+    color: black;
+    margin-top: 7rem;
+    margin-left: 14rem;
+    font-size: 3em;
+    position: absolute;
+    z-index: 5;
 }
