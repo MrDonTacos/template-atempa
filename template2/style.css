@@ -1,128 +1,121 @@
 
+html {
+    font-size: 62.5%; /** Reset a Rems **/
+    
+    box-sizing: border-box;
+  }
+  *,*:before, *:after{
+    box-sizing: inherit;
+  }
+  
 body {
- background-color: whitesmoke;
- padding: 0 2% 0 2%;
- background: url("images/moroccan-flower.png");
- background-repeat: repeat;
+    /** font-family: 'PT Sans', sans-serif;**/
+    line-height: 1.4;
 }
 
-*{
+  /** Globales **/ 
+  
+.container {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto 0 auto;
+}
+.no-margin {
     margin: 0;
-    padding: 0;
+}
+img {
+    width: 100%;
+}
+video {
+    width: 100%;
+    height: 100%;
 }
 
-.box-1 {
+/** Header **/
+.site-header {
     height: 18vh;
-    width: 98%;
-    margin: 1% 0% 1% 0%;
-    box-shadow: -10px 5px black;
-    border: 2px solid black;
+    padding: 2rem;
 }
-
-.box-1:first-child > * {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+.no-pasar {
+    overflow: hidden;
 }
 
 header > div {
     height: 40%;
     object-fit: cover;
 }
-
-@supports(object-fit: cover){
-    header > div > img {
-        height: 100%;
-        object-fit: cover;
-    }
+header .container p {
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 2rem;
 }
-.box-1 > h2 {
-    font-size: 4em;
-}
-
-.box-1 > p {
-    font-size: 2em;
-}
-
 header {
     background: url("images/herringbone.png");
     background-repeat: repeat;
 }
+.site-header {
+    background-color: #D3D3D3;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+.logo h2 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 5em;
+    border: 8px black double;
+    display: inline;
+
+}
 
 .container-middle {
     display: flex;
-    height: 56vh;
+    height: 70vh;
     justify-content:space-between;
+    border: 2px solid black;
+
 }
-
-section {
-    width: 98%;
-}
-
-.middle {
-    background-color: rgba(167, 149, 149, 0.350);
-    overflow-y: scroll;
-    box-shadow: -10px 5px black;
-}
-
-
-.middle:hover{
-    margin-top: -10px;
-    margin-bottom: 10px;
-    margin-left: 1%;
-}
-
-.middle:nth-of-type(2):hover{
-    margin-top: -10px;
-    margin-bottom: 10px;
-    margin-left: 3%;
-}
-
-section > div > div:not(section div:nth-of-type(2)) {
-    flex: 1;
-}
-
-section > div > div:nth-of-type(2) {
-    flex: 2;
-    margin: 0% 2% 0 2%;
-}
-
-div > h3 {
-    padding-top: 1em;
-    margin-left: 2em;
-    padding-right: 16px;
-}
-
-div > p {
-    text-align: center;
-    font-family: 'Brush Script MT', cursive;
-    font-size: x-large;
-}
-
-div > p:first-child {
-    padding: 2em ;
-    padding-bottom: 0;
-}
-
-div > p:not(p:first-child) {
-    padding: 1em;
-}
-
-footer  {
-    background: url("images/crossline-dots.png");
-    background-repeat: repeat;
+.two-middle {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    overflow-x: scroll;
 }
+.middle {
+    background-color: rgba(167, 149, 149, 0.350);
+    flex-basis: 33.3%;
+    border: 2px solid black;
+}
+.middle.center {
+    overflow: hidden;
+    flex-basis: 66.6%;
+    background-color: #231C18;
+}
+.middle.center h3 {
+    display:flex;
+    justify-content: center;
+    font-size: 3em;
+    color: white;
 
-footer > p:first-child {
-    padding: 1em 12em 1em 12em;
-    font-size: 1.4em;
+}
+.middle.center p {
+    margin-top: 1rem;
     text-align: center;
+    font-size: 3rem;
+    color: white;
 }
 
-footer > p:last-child {
-    color: blue;
-    font-size: 1.3em;
+footer{
+    background-color: black;
+    height: 12vh;
+    padding: 3rem;
+    font-size: 2em;
+}
+footer .container {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+footer .container a{
+    text-decoration: none;
+    color: white;
 }
