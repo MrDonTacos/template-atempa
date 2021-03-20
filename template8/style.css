@@ -10,7 +10,7 @@ body {
 header {
     width: 97vw;
     height: 20vh;
-    background-color: lawngreen;
+    background: url("images/club-penguin.png");
     margin-bottom: 2em;
 }
 
@@ -22,24 +22,64 @@ main {
     justify-content: space-around;
 }
 
-main section {
+main > section {
     flex: 1;
     background: lightsalmon;
 }
 
-main section:nth-child(2) {
+main > section:nth-child(2) {
     background-color: white;
     margin: 0 2em 0 2em;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-main section div {
-    flex: 1em;
+main > section > div {
+    flex: 1;
     margin: 1em 0;
-    background-color: black;
+    background-color: rgb(100, 100, 100);
+    box-shadow: 10px 10px black;
 }
 
 .borderless {
+    margin: 0;
+}
+
+main > section:first-child {
+    background: url("images/publicity.jpg");
+    background-size: cover;
+    color: red;
+    text-align: center;
+}
+
+main > section:last-child {
+    background: url("images/publicity-2.jpeg");
+    background-size: cover;
+    color: red;
+    text-align: center;
+}
+
+main > section:nth-of-type(2) > div > *{
+    display: inline-block;
+    overflow: hidden;
+    width: 40%;
+    height: 80%;
+    margin-left: 5%;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+main > section:nth-of-type(2) > div > div {
+    margin-top: 2%;
+}
+
+main section:nth-of-type(2) > div > div  > p:last-child {
+    padding-top: 10%;
+}
+
+p {
     margin: 0;
 }
