@@ -18,11 +18,35 @@ section > section:last-child{
 
 
 aside {
-    display: flex;
-    flex-direction: column;
     height: 96vh;
     width: 36vh;
-    background-color: black;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+aside > ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+aside > ul > li {
+    flex: 1;
+    flex-basis: 2rem;
+}
+
+aside > ul > li > ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+}
+
+aside > ul > li > ul > li {
+    flex-basis: 2rem;
+    font-size: 0.8em;
+    list-style: circle;
 }
 
 .strap {
@@ -38,15 +62,31 @@ aside {
     height: 50vh;
     margin: 2em 0 2em 0;
     display: flex;
-    justify-content: space-between;
 }
 
 .right-middle{
-    background-color: greenyellow;
-    flex: 1
+    flex: 1;
 }
 
 .right-middle:last-child {
-    margin: 0 0 0 2em
+    margin: 0 0 0 2em;
 }
 
+.right-middle > img {
+    width: 100%;
+    height: 100%;
+}
+
+ul > li {
+    padding-left: 3%;
+    font-size: 1.5em;
+
+}
+
+li {
+    list-style: none;
+}
+
+li > ul > li:first-child{
+    padding-top: 7%;
+}
