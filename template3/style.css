@@ -1,12 +1,49 @@
+html {
+    font-size: 62.5%;
+    
+    box-sizing: border-box;
+  }
+  *,*:before, *:after{
+    box-sizing: inherit;
+  }
+  
 section {
-    height: 98vh;
-    width: 98vw;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
 }
 
 section div {
+    flex-basis: calc(33.3% - 1rem);
+    background: black;
+}
+
+img {
+    width: 100%;
     height: 100%;
-    width: 30%;
-    background: grey;
+}
+.leaderboard {
+    font-size: 4em;
+    width: 95%;
+} 
+h2 {
+    text-align: center;
+    color: white;
+}
+.leaderboard-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+ul li {
+    color: white;
+}
+
+.puntuaciones h2 {
+    font-size: 4em;
+}
+.puntuaciones ul li {
+    font-size: 4em;
+    list-style: none;
 }
