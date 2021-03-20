@@ -1,52 +1,106 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 
+html {
+    font-size: 62.5%;
+    
+    box-sizing: border-box;
+  }
+  *,*:before, *:after{
+    box-sizing: inherit;
+  }
+  
 body {
-    padding: 2vh 2vw 2vh 2vw;
+    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
 }
 
-section:first-child {
-    display: flex;
-    justify-content:flex-start;
+  /** Globales **/ 
+  
+.container {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto 0 auto;
 }
-
-section > section:last-child{
-    margin-left: 2em;
+.no-margin {
+    margin: 0;
 }
-
-
-aside {
-    display: flex;
-    flex-direction: column;
-    height: 96vh;
-    width: 36vh;
-    background-color: black;
+img {
+    width: 100%;
 }
-
-.strap {
-    height: 20vh;
-    width: 70vw;
+video {
+    width: 100%;
+    height: 100%;
 }
-
-.strap:not(.strap:nth-child(2)) {
-    background-color: black;
-}
-
-.strap:nth-child(2) {
-    height: 50vh;
-    margin: 2em 0 2em 0;
+section {
     display: flex;
     justify-content: space-between;
 }
-
-.right-middle{
-    background-color: greenyellow;
-    flex: 1
+h2 {
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
 }
-
-.right-middle:last-child {
-    margin: 0 0 0 2em
+header {
+    overflow: hidden;
 }
+header img {
+    position: relative;
+    top: -40rem;
+}
+header > h1 {
+    position: absolute;
+    color: white;
+    font-size: 5em;
+    z-index: 4;
+    margin-left: 20rem;
+} 
 
+.day {
+    background: #FFEFBA;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+}
+.night {
+  background: #0f2027; 
+  background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-basis: 30%;
+    background-color: #CFAF8E;
+}
+aside h2 {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+.contenedor {
+    flex-basis: calc(70% - 1rem);
+
+}
+.main-content {
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-chico-grande {
+    height: 20vh;
+    width: 70vw;
+    background-color: blue;
+}
+footer img {
+    height: 100%;
+    position: relative;
+}
+footer p {
+        color: black;
+        font-weight: bolder;
+        position: absolute;
+        z-index:2;
+        font-size: 6em;
+        margin-left: 35rem;
+}
