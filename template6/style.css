@@ -20,7 +20,7 @@ section > section:last-child{
 aside {
     height: 96vh;
     width: 36vh;
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(131, 98, 36, 0.726);
 }
 
 aside > ul {
@@ -55,13 +55,20 @@ aside > ul > li > ul > li {
 }
 
 .strap:not(.strap:nth-child(2)) {
+    text-align: center;
     background-color: black;
+    background: url("images/crossline-dots.png");
 }
 
 .strap:nth-child(2) {
     height: 50vh;
     margin: 2em 0 2em 0;
     display: flex;
+}
+
+.strap:not(.strap:nth-child(2)) > img {
+    width: 50%;
+    height: 100%;
 }
 
 .right-middle{
@@ -90,3 +97,8 @@ li {
 li > ul > li:first-child{
     padding-top: 7%;
 }
+
+a {
+    color: black;
+}
+
