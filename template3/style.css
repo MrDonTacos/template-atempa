@@ -1,12 +1,29 @@
-section {
+body {
+    background: rgba(223, 205, 174, 0.39)
+}
+
+main {
     height: 98vh;
     width: 98vw;
     display: flex;
     justify-content: space-between;
 }
 
-section div {
+main section {
     height: 100%;
     width: 30%;
-    background: grey;
+    background: url("images/paper.jpg");
+}
+
+main > section > h3 {
+    text-align: center;
+    font-size: 2em;
+    font-family:"Cambria, Cochin, Georgia, Times, 'Times New Roman', serif", cursive;
+}
+
+main > section > p {
+    padding: 10%;
+    font-size: 1.5em;
+    font-family:'PT Sans Narrow', cursive;
+    font-style: italic;
 }
